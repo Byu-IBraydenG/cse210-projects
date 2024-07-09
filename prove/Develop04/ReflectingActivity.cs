@@ -35,16 +35,13 @@ public class ReflectingActivity : Activity
         Random rand = new Random();
         string prompt = GetRandomPrompt();
         Console.WriteLine(prompt);
-        ShowSpinner(3);
+        Console.Write("");
 
-        while (_duration > 0)
-        {
-            string question = GetRandomQuestion();
-            Console.WriteLine(question);
-            ShowSpinner(3);
-            _duration -= 3;
-        }
-
+        
+        
+        string question = GetRandomQuestion();
+        Console.WriteLine(question);
+        Console.Write("");
         DisplayEndingMessage();
     }
 
