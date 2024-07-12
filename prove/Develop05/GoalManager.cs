@@ -69,6 +69,7 @@ public class GoalManager
         _goals.Add(goal);
     }
 
+    // Not showing scores and recording them.
     public void RecordEvent()
     {
         Console.WriteLine("Enter the goal number to record an event: ");
